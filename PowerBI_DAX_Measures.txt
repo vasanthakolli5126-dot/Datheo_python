@@ -1,0 +1,49 @@
+POWER BI DAX MEASURES — SUPERSTORE SALES
+
+Total Sales =
+SUM ( Fact_Orders[Sales] )
+
+Total Profit =
+SUM ( Fact_Orders[Profit] )
+
+Total Quantity =
+SUM ( Fact_Orders[Quantity] )
+
+Total Orders =
+DISTINCTCOUNT ( Fact_Orders[Order ID] )
+
+Unique Customers =
+DISTINCTCOUNT ( Fact_Orders[Customer ID] )
+
+Profit Margin % =
+DIVIDE ( [Total Profit], [Total Sales], 0 )
+
+Average Discount % =
+AVERAGE ( Fact_Orders[Discount] )
+
+Sales Previous Year =
+CALCULATE (
+    [Total Sales],
+    SAMEPERIODLASTYEAR ( Dim_Date[Date] )
+)
+
+YoY Sales Growth % =
+DIVIDE (
+    [Total Sales] - [Sales Previous Year],
+    [Sales Previous Year],
+    0
+)
+
+Sales YTD =
+TOTALYTD ( [Total Sales], Dim_Date[Date] )
+
+Profit YTD =
+TOTALYTD ( [Total Profit], Dim_Date[Date] )
+
+IMPORTANT:
+1. Mark Dim_Date as the Date table using Dim_Date[Date].
+2. Create a one-to-many relationship Dim_Date[Date] -> Fact_Orders[Order Date].
+3. Create a one-to-many relationship Dim_Customer[Customer ID] -> Fact_Orders[Customer ID].
+4. Create a one-to-many relationship Dim_Product[Product ID] -> Fact_Orders[Product ID].
+5. Set date columns to Date type and Sales/Profit to decimal/currency as appropriate.
+6. Use Dim_Date[Year-Month] for the monthly axis and sort it by chronological date/order.
