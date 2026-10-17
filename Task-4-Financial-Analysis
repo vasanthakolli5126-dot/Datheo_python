@@ -1,0 +1,73 @@
+# Task 4: Financial KPI Dashboard & Variance Analysis
+
+## 📌 Project Overview
+
+This project focuses on analyzing corporate financial performance using the Microsoft Financial Sample dataset. The objective is to evaluate sales, discounts, manufacturing costs, and profitability across different products, countries, and business segments.
+
+The project uses Power BI and DAX to build an interactive financial dashboard that supports data-driven business decisions.
+
+## 🎯 Objectives
+
+- Analyze gross sales, discounts, cost of goods sold (COGS), and profit.
+- Compare financial performance across geographic regions, product lines, and business segments.
+- Calculate key financial performance indicators.
+- Identify revenue loss and profitability trends.
+- Perform budget-versus-actual variance analysis wherever the required budget data is available.
+- Explore financial scenarios using interactive what-if parameters.
+
+## 🛠️ Tools and Technologies
+
+- Microsoft Power BI Desktop
+- DAX (Data Analysis Expressions)
+- Microsoft Excel
+- Financial modeling and data visualization
+
+## 📊 Key Performance Indicators
+
+- **Gross Sales:** Total sales before discounts.
+- **Net Sales:** Sales after deducting discounts.
+- **COGS:** Cost of goods sold.
+- **Gross Profit:** Net sales minus COGS.
+- **Gross Profit Margin %:** Gross profit as a percentage of net sales.
+- **COGS Ratio:** COGS as a percentage of net sales.
+- **Segment Margin:** Profitability analysis across business segments.
+- **Sales Variance:** Actual sales minus budgeted sales, when budget data is available.
+
+## 📈 Dashboard Features
+
+- Financial KPI cards
+- Sales and profit analysis by product
+- Geographic and segment performance comparisons
+- Revenue and cost waterfall chart
+- Profit margin and COGS ratio analysis
+- Interactive filters and slicers
+- What-if scenario analysis using adjustable parameters
+
+## 💡 Expected Business Insights
+
+- Identify products and regions contributing the most profit.
+- Understand how discounts affect revenue and margins.
+- Compare the cost structure across business segments.
+- Identify low-margin products and opportunities for improvement.
+- Evaluate alternative sales and cost scenarios.
+
+## 📁 Project Deliverables
+
+- `financial_sample.xlsx` — source dataset
+- `Financial_KPI_Dashboard.pbix` — interactive Power BI dashboard
+- `Financial_Analysis_Report.pdf` — financial analysis report
+- `Financial_DAX_Measures.txt` — DAX formulas
+- `Financial_Dashboard_Setup_Guide.md` — dashboard setup instructions
+
+## ⚠️ Data Limitation
+
+Budget-versus-actual variance analysis requires budget targets. If the source dataset does not contain budget values, a separate budget dataset or clearly labeled assumptions must be added. Scenario results are estimates, not actual financial outcomes.
+
+## 🏁 Conclusion
+
+This project demonstrates how Power BI, DAX, and financial modeling can transform financial data into interactive visual insights. The dashboard is designed to help users understand revenue performance, cost behavior, profitability, and potential business scenarios.
+
+**Project Category:** Data Analytics | Business Intelligence | Financial Analysis
+
+**Status:** In Progress
+
